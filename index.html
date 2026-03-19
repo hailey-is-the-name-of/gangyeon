@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026년 청년정책개발사업</title>
+    <style>
+        /* Pretendard Web Font */
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            background-color: #f5f7fa; /* 아주 연한 회색 배경으로 흰색 카드를 돋보이게 함 */
+            color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            word-break: keep-all; /* 한국어 줄바꿈 최적화 */
+        }
+
+        .container {
+            background-color: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 50px 40px;
+        }
+
+        /* Header (Logo & Title) */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .main-title {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+        }
+
+        /* Event Sections */
+        .event-card {
+            background: #fafafa;
+            border: 1px solid #eaeaea;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #004ea2; /* 포인트 컬러 (파란색 계열) */
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+        }
+
+        .event-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .info-list {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .info-list li {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1.5;
+        }
+
+        .info-label {
+            font-weight: 700;
+            color: #555;
+            width: 70px;
+            flex-shrink: 0;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        .hosts {
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px dashed #ddd;
+            padding-top: 20px;
+            line-height: 1.6;
+        }
+
+        .hosts span {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 480px) {
+            .container {
+                padding: 40px 20px;
+            }
+            .main-title {
+                font-size: 1.4rem;
+            }
+            .event-title {
+                font-size: 1.2rem;
+            }
+            .info-list li {
+                flex-direction: column;
+            }
+            .info-label {
+                margin-bottom: 4px;
+                color: #004ea2;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="http://182.227.19.5:4559/static/images/logo.png" alt="로고" class="logo">
+            <h1 class="main-title">[ 2026년 청년정책개발사업 ]</h1>
+        </div>
+
+        <div class="event-card">
+            <span class="badge">강연</span>
+            <h2 class="event-title">대구의 정책환경 분석</h2>
+            <ul class="info-list">
+                <li>
+                    <span class="info-label">일시 |</span>
+                    <span class="info-value">2026년 3월 20일 (금) 19:00</span>
+                </li>
+                <li>
+                    <span class="info-label">장소 |</span>
+                    <span class="info-value">더불어민주당 대구광역시당 김대중홀</span>
+                </li>
+                <li>
+                    <span class="info-label">강연자 |</span>
+                    <span class="info-value">김지수 작가<br>'어그러진 도시 : 무엇이 우리의 출퇴근을 힘들게 하나' 작가</span>
+                </li>
+            </ul>
+            <div class="hosts">
+                <span><strong>주관 |</strong> 더불어민주당 전국청년위원회</span>
+                <span><strong>주최 |</strong> 더불어민주당 대구시당 청년위원회</span>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <span class="badge">토론회</span>
+            <h2 class="event-title">정책의제 발굴 및 선정</h2>
+            <ul class="info-list">
+                <li>
+                    <span class="info-label">일시 |</span>
+                    <span class="info-value">2026년 3월 21일 (토) 17:00</span>
+                </li>
+                <li>
+                    <span class="info-label">장소 |</span>
+                    <span class="info-value">더불어민주당 대구광역시당 김대중홀</span>
+                </li>
+            </ul>
+            <div class="hosts">
+                <span><strong>주관 |</strong> 더불어민주당 전국청년위원회</span>
+                <span><strong>주최 |</strong> 더불어민주당 대구시당 청년위원회</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>많은 참석 부탁드립니다.</p>
+        </div>
+    </div>
+
+</body>
+</html>
